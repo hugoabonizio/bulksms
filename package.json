@@ -1,0 +1,23 @@
+{
+  "name": "bulksms",
+  "version": "0.0.1",
+  "description": "BulkSMS API wrapper",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha"
+  },
+  "keywords": [
+    "sms"
+  ],
+  "author": "Hugo Abonizio <hugo_abonizio@hotmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.79.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "nock": "^9.0.4",
+    "supertest": "^3.0.0"
+  }
+}
