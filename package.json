@@ -1,7 +1,7 @@
 {
   "name": "bulksms",
   "version": "0.0.1",
-  "description": "BulkSMS API wrapper",
+  "description": "BulkSMS API wrapper for NodeJS",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha"
