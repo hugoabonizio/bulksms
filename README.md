@@ -1,8 +1,10 @@
-# BulkSMS API for NodeJS [![Build Status](https://travis-ci.org/hugoabonizio/bulksms.svg?branch=master)](https://travis-ci.org/hugoabonizio/bulksms)
+# BulkSMS API [![Build Status](https://travis-ci.org/hugoabonizio/bulksms.svg?branch=master)](https://travis-ci.org/hugoabonizio/bulksms)
 
 BulkSMS is a simple implementation of [BulkSMS](http://www.bulksms.com/) API for NodeJS that allows you to easily integrate SMS services into your application.
 
 ## Installation
+
+This module requires Node v6.0.0+.
 
 ```npm install bulksms --save```
 
