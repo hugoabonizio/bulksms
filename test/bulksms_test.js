@@ -17,8 +17,8 @@ describe('Send SMS', function () {
   })
 
   it('sends properly', function (done) {
-    const SMS = new BulkSMS('user', 'pass', '99999999')
-    SMS.send('test', (err, result) => {
+    const SMS = new BulkSMS('user', 'pass')
+    SMS.send('99999999', 'test', (err, result) => {
       expect(err).to.be.null
       expect(result.code).to.be.equal(0)
       expect(result.status).to.be.equal('IN_PROGRESS')
@@ -28,8 +28,8 @@ describe('Send SMS', function () {
   })
 
   it('fails when providing invalid authentication', function (done) {
-    const SMS = new BulkSMS('wrong', 'password', '99999999')
-    SMS.send('test', (err, result) => {
+    const SMS = new BulkSMS('wrong', 'password')
+    SMS.send('99999999', 'test', (err, result) => {
       expect(err).to.not.null
       done()
     })

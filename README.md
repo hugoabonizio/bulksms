@@ -1,4 +1,7 @@
-# BulkSMS API [![Build Status](https://travis-ci.org/hugoabonizio/bulksms.svg?branch=master)](https://travis-ci.org/hugoabonizio/bulksms)
+BulkSMS API
+==========
+[![NPM version](https://img.shields.io/npm/v/bulksms.svg)](https://www.npmjs.com/package/bulksms)
+[![Build Status](https://travis-ci.org/hugoabonizio/bulksms.svg?branch=master)](https://travis-ci.org/hugoabonizio/bulksms)
 
 BulkSMS is a simple implementation of [BulkSMS](http://www.bulksms.com/) API for NodeJS that allows you to easily integrate SMS services into your application.
 
@@ -14,8 +17,8 @@ To use this module you need an account from www.bulksms.com (you start with 5 fr
 
 ```javascript
 const BulkSMS = require('bulksms')
-const SMS = new BulkSMS('[USER]', '[PASSWORD]', '[NUMBER]')
-SMS.send('Hello, this is just a test!', (err, result) => {
+const SMS = new BulkSMS('[USER]', '[PASSWORD]')
+SMS.send('[NUMBER]', 'Hello, this is just a test!', (err, result) => {
   if (err)
     return console.error(err)
 
