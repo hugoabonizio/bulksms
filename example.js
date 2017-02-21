@@ -1,6 +1,6 @@
 const BulkSMS = require('./')
-const SMS = new BulkSMS('[USER]', '[PASSWORD]', '[NUMBER]')
-SMS.send('Hi!', (err, result) => {
+const SMS = new BulkSMS('[USER]', '[PASSWORD]')
+SMS.send('[NUMBER]', 'Hi!', (err, result) => {
   if (err)
     return console.error(err)
 
