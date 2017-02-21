@@ -12,7 +12,7 @@ module.exports = class BulkSMS {
 
   send(msisdn, message, cb) {
     request.post({
-      url: 'https://bulksms_.vsms.net/eapi/submission/send_sms/2/2.0',
+      url: 'https://bulksms.vsms.net/eapi/submission/send_sms/2/2.0',
       form: {
         username: this.user,
         password: this.pass,
