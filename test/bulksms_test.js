@@ -4,7 +4,7 @@ const BulkSMS = require('../')
 
 describe('Send SMS', function () {
   before(function () {
-    nock('https://bulksms_.vsms.net')
+    nock('https://bulksms.vsms.net')
       .post('/eapi/submission/send_sms/2/2.0', {
         username: 'user',
         password: 'pass',
